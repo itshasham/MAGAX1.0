@@ -17,11 +17,6 @@ type SMTPMailer struct {
 
 func NewSMTPMailer(host string, port int, username, password, from string) *SMTPMailer {
 	// Debugging config values
-	fmt.Println("🛠 NewSMTPMailer config:")
-	fmt.Println("Host:", host)
-	fmt.Println("Port:", port)
-	fmt.Println("User:", username)
-	fmt.Println("From:", from)
 
 	return &SMTPMailer{
 		Host:     host,
